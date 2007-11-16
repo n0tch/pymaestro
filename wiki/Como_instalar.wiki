@@ -4,8 +4,10 @@
 
 O pacote pyMaestro, disponível para download, é o código propriamente dito. Como python é uma linguagem interpretada, você deve rodá-lo pelo interpretador python. Portanto, você precisa ter o interpretador python, versão 2.4 ou superior, instalado em seu computador. Você o obtém em: 
 
-http://www.python.org/download/
+http://www.python.org/download/releases/2.4.4/
+ - Para Windows, sugiro o pacote python-2.4.4.msi
 
+ - No Linux, com 99,99% de chance, você já o tem instalado.
 
 * Passo 2: 
 

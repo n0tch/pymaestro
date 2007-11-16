@@ -1,13 +1,39 @@
 O que você precisa para ter o pyMaestro rodando em seu computador?
 
-O pacote pyMaestro, disponível para download, é o código propriamente dito. Como python é uma linguagem interpretada, você deve rodá-lo pelo interpretador python. Portanto, você precisa ter o interpretador python, versão 2.4 ou superior, que você obtem em: http://www.python.org/download/
+* Passo 1: 
+
+O pacote pyMaestro, disponível para download, é o código propriamente dito. Como python é uma linguagem interpretada, você deve rodá-lo pelo interpretador python. Portanto, você precisa ter o interpretador python, versão 2.4 ou superior, instalado em seu computador. Você o obtém em: 
+
+http://www.python.org/download/
 
 
-Além do mais, durante o desenvolvimento do programa, foram utilizadas algumas bibliotecas para python que também precisam ser instaladas. São elas:
+* Passo 2: 
 
-PyGTK: www.pygtk.org
+Como banco de dados, foi utilizado o MySQL que também precisa estar instaldo e pode ser obtido no endereço a seguir:
+
+MySQL: http://dev.mysql.com/downloads/mysql/5.0.html#downloads
+
+* Passo 3: 
+
+Se você está usando um sitema Linux, provavelmente tudo o mais já está instaldo em seu sitema e você pode tentar ir direto ao Passo 4.
+
+Se você está utilizando um Sistema Operacional Windows, algumas bibliotecas
+para python e o ambiente GTK também precisam ser instalados. A seguir o que mais precisaria ser instalado e onde você obtém:
+
+MySQL para python: http://sourceforge.net/projects/mysql-python
+
+GTK: http://gladewin32.sourceforge.net/modules/news/
+
+PyGTK: http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.10/
+
 PyCairo: http://ftp.gnome.org/pub/GNOME/binaries/win32/pycairo/1.2/
-PyObject:
-LibGlade:
-MySQL para python:
-MySQL:
+
+PyObject:http://ftp.gnome.org/pub/GNOME/binaries/win32/pygobject/2.12/
+
+LibGlade: http://sourceforge.net/projects/wingtk/
+
+Para evitar problemas, instale-os na ordem.
+
+* Passo 4: 
+
+Certo, agora o simples: Baixe o pacote pyMaestro e descompacte-o na pasta desejada. E pronto! Ufa! É bastante coisa para instalar como pré-requisito, mas agora acabou! Siga os passos de como utilizar o pyMaestro pela primeira vez.

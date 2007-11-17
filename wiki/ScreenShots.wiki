@@ -1,1 +1,1 @@
-http://code.google.com/p/pymaestro/download/pymaestro_screenshot.jpg
+[http://pymaestro.googlecode.com/files/pymaestro_screenshot.jpg]

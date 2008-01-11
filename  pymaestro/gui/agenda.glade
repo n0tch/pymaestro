@@ -1,0 +1,423 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<!DOCTYPE glade-interface SYSTEM "http://gazpacho.sicem.biz/gazpacho-0.1.dtd">
+<glade-interface>
+    <widget class="GtkWindow" id="janela_agenda">
+        <property name="default_height">250</property>
+        <property name="default_width">440</property>
+        <property name="title" context="yes" translatable="yes">Agenda Maestro</property>
+        <child>
+            <widget class="GtkHBox" id="hbox1">
+                <property name="visible">True</property>
+                <child>
+                    <widget class="GtkVBox" id="vbox1">
+                        <property name="visible">True</property>
+                        <child>
+                            <widget class="GtkCalendar" id="calendario">
+                                <property name="is_focus">True</property>
+                                <property name="visible">True</property>
+                                <signal handler="data_selecionada" name="day_selected_double_click"/>
+                            </widget>
+                        </child>
+                        <child>
+                            <widget class="GtkVBox" id="vbox2">
+                                <property name="visible">True</property>
+                                <child>
+                                    <widget class="GtkHSeparator" id="hseparator1">
+                                        <property name="visible">True</property>
+                                    </widget>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <widget class="GtkHBox" id="hbox2">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_financa_mensal">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_financa_mensal_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image1">
+                                                        <property name="stock">gtk-info</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_abrir_cadastro_clicado">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_abrir_cadastro_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image4">
+                                                        <property name="stock">gtk-copy</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label9">
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_adicionar_agendamento">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_adicionar_agendamento_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image1">
+                                                        <property name="stock">gtk-add</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="position">3</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_remover_agendamento">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_remover_agendamento_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image2">
+                                                        <property name="stock">gtk-remove</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="position">4</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label8">
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">5</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_backup">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_backup_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image2">
+                                                        <property name="stock">gtk-save</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="position">6</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label11">
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">7</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_sair_agenda">
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_sair_agenda_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image3">
+                                                        <property name="stock">gtk-quit</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="position">8</property>
+                                            </packing>
+                                        </child>
+                                    </widget>
+                                    <packing>
+                                        <property name="position">1</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <widget class="GtkHSeparator" id="hseparator2">
+                                        <property name="visible">True</property>
+                                    </widget>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="position">2</property>
+                                    </packing>
+                                </child>
+                            </widget>
+                            <packing>
+                                <property name="position">1</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <widget class="GtkHBox" id="dados_hbox">
+                                <property name="visible">True</property>
+                                <child>
+                                    <widget class="GtkVBox" id="vbox3">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <widget class="GtkLabel" id="label3">
+                                                <property name="label" context="yes" translatable="yes">Cliente</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="fill">False</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label4">
+                                                <property name="label" context="yes" translatable="yes">Observação</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="fill">False</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label5">
+                                                <property name="label" context="yes" translatable="yes">Horário</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="fill">False</property>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label6">
+                                                <property name="label" context="yes" translatable="yes">Valor da consulta</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="fill">False</property>
+                                                <property name="position">3</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label7">
+                                                <property name="label" context="yes" translatable="yes">Valor pago</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="fill">False</property>
+                                                <property name="position">4</property>
+                                            </packing>
+                                        </child>
+                                    </widget>
+                                </child>
+                                <child>
+                                    <widget class="GtkVBox" id="vbox4">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <widget class="GtkEntry" id="cliente_para_agendamento_entry">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="ativou" name="activate"/>
+                                            </widget>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkEntry" id="observacao_entry">
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkComboBox" id="horarios_combo">
+                                                <property name="items" context="yes" translatable="yes">07:00
+07:30
+08:00
+08:30
+09:00
+09:30
+10:00
+10:30
+11:00
+11:30
+12:00
+12:30
+13:00
+13:30
+14:00
+14:30
+15:00
+15:30
+16:00
+16:30
+17:00
+17:30
+18:00
+18:30
+19:00
+19:30</property>
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkEntry" id="valor_consulta_entry">
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">3</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkEntry" id="valor_pago_entry">
+                                                <property name="visible">True</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">4</property>
+                                            </packing>
+                                        </child>
+                                    </widget>
+                                    <packing>
+                                        <property name="position">1</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <widget class="GtkVBox" id="vbox5">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_selecionar_cadastro">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_selecionar_cadastro_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image6">
+                                                        <property name="stock">gtk-find</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkLabel" id="label2">
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </widget>
+                                            <packing>
+                                                <property name="padding">7</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_salvar_modificacoes_agendamento">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_salvar_modificacoes_agendamento_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image7">
+                                                        <property name="stock">gtk-save</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_agendar">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_agendar_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image5">
+                                                        <property name="stock">gtk-apply</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">3</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <widget class="GtkButton" id="botao_sair_agendamento">
+                                                <property name="is_focus">True</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="botao_desativar_quadro_agendamento_clicado" name="clicked"/>
+                                                <child>
+                                                    <widget class="GtkImage" id="image8">
+                                                        <property name="stock">gtk-cancel</property>
+                                                        <property name="visible">True</property>
+                                                    </widget>
+                                                </child>
+                                            </widget>
+                                            <packing>
+                                                <property name="position">4</property>
+                                            </packing>
+                                        </child>
+                                    </widget>
+                                    <packing>
+                                        <property name="position">2</property>
+                                    </packing>
+                                </child>
+                            </widget>
+                            <packing>
+                                <property name="position">2</property>
+                            </packing>
+                        </child>
+                    </widget>
+                </child>
+                <child>
+                    <widget class="GtkScrolledWindow" id="scrolledwindow1">
+                        <property name="visible">True</property>
+                        <child>
+                            <widget class="GtkTreeView" id="treeview_de_agendamento">
+                                <property name="height_request">459</property>
+                                <property name="is_focus">True</property>
+                                <property name="search_column">0</property>
+                                <property name="visible">True</property>
+                                <property name="width_request">451</property>
+                                <signal handler="abre_janela_agendamento_com_dados" name="row_activated"/>
+                            </widget>
+                        </child>
+                    </widget>
+                    <packing>
+                        <property name="position">1</property>
+                    </packing>
+                </child>
+                <child>
+                    <placeholder/>
+                    <packing>
+                        <property name="position">2</property>
+                    </packing>
+                </child>
+            </widget>
+        </child>
+    </widget>
+</glade-interface>
